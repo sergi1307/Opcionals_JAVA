@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Opcionales {
 
     /**
@@ -77,7 +79,15 @@ public class Opcionales {
         }
     }
 
-    public static void opcional4() {};
+    /**
+     * Ejercicio opcional 4: Haz un programa que haga lo siguiente:
+     * Crear la matriz calcular de dimensión 4x3 para almacenar valores enteros.
+     * Imprimir la matriz
+     */
+    public static void opcional4() {
+        int[][] matriz = new int[4][3];
+        System.out.println(Arrays.deepToString(matriz));
+    };
 
     public static void opcional5() {};
 
