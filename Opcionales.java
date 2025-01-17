@@ -89,7 +89,29 @@ public class Opcionales {
         System.out.println(Arrays.deepToString(matriz));
     };
 
-    public static void opcional5() {};
+    /**
+     * Ejercicio opcional 5: Haz un programa que haga lo siguiente:
+     * Crear una matriz de dimensión 3x2 (3 filas y 2 columnas) llamada tabla para almacenar palabras.
+     * Inicializala con la palabra: “libre”
+     * Imprime la tabla
+     */
+    public static void opcional5() {
+        String[][] tabla = new String [3][2];
+
+        for (int i = 0; i < tabla.length; i++) {
+            for(int j = 0; j < tabla[i].length; j++) {
+                tabla[i][j] = "Libre";
+            }
+        }
+
+        System.out.println("Contenido de la tabla:");
+        for (int i = 0; i < tabla.length; i++) {
+            for(int j = 0; j < tabla[i].length; j++) {
+                System.out.print(tabla[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
 
     public static void opcional6() {};
 }
