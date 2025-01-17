@@ -51,9 +51,31 @@ public class Opcionales {
         }
 
         System.out.println("La suma de las posiciones es: " + suma + ".");
-    };
+    }
 
-    public static void opcional3() {};
+    /**
+     * Ejercicio opcional 3: Haz un programa que haga lo siguiente:
+     * Crear el vector origen, inicializado con los valores: 15,22,55,67,33,46,26,54,21,4
+     * Recorrer el vector poniendo en un segundo vector, de nombre destino, todos los elementos
+     * pares mayores de 30.
+     * Muestra por pantalla el contenido del segundo vector (solo los valores añadidos).
+     */
+    public static void opcional3() {
+        int[] origen = {15,22,55,67,33,46,26,54,21,4};
+        int[] destino = new int[2];
+        int iteraciones = -1;
+
+        for (int j : origen) {
+            if (j > 30 && j % 2 == 0) {
+                iteraciones = iteraciones + 1;
+                destino[iteraciones] = j;
+            }
+        }
+
+        for (int i = 0; i < destino.length; i++) {
+            System.out.println("-destino[" + i + "] = " + destino[i]);
+        }
+    }
 
     public static void opcional4() {};
 
