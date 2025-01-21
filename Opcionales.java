@@ -87,7 +87,7 @@ public class Opcionales {
     public static void opcional4() {
         int[][] matriz = new int[4][3];
         System.out.println(Arrays.deepToString(matriz));
-    };
+    }
 
     /**
      * Ejercicio opcional 5: Haz un programa que haga lo siguiente:
@@ -113,5 +113,20 @@ public class Opcionales {
         }
     }
 
-    public static void opcional6() {};
+    /**
+     * Ejercicio opcional 6: Haz un programa que haga lo siguiente:
+     * Crear un array llamado opcional para almacenar 5 valores enteros.
+     * Inicializalo con el valor 5
+     * Modifica los valores del array restando, a cada valor, el valor de su posición.
+     * Ordena los valores
+     * Imprime el array con los valores finales.
+     */
+    public static void opcional6() {
+        int[] opcional = {5,5,5,5,5};
+
+        for (int i = 1; i < opcional.length; i++) {
+            opcional[i] = 5 - i;
+        }
+        System.out.println(Arrays.toString(opcional));
+    }
 }
